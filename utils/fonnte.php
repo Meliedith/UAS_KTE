@@ -6,7 +6,7 @@
 
 function sendOTPWhatsApp($phone, $otp) {
     // ===== GANTI DENGAN TOKEN ANDA DARI FONNTE.COM =====
-    $token = "MzY3DjuX1JN838j5y5PS";
+    $token = "";
     
     $message = "🔐 *Kode OTP Anda*\n\nKode: *$otp*\n\nKode ini berlaku 5 menit dan hanya untuk sekali pakai. Jangan bagikan ke siapa pun.";
     
