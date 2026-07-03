@@ -1,0 +1,99 @@
+body { 
+    font-family: Arial, sans-serif; 
+    background: #f4f4f4; 
+    margin: 0; 
+    padding: 20px; 
+}
+
+.container { 
+    max-width: 900px; 
+    margin: auto; 
+    background: white; 
+    padding: 30px; 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+}
+
+.btn-google { 
+    display: inline-block; 
+    background: #4285f4; 
+    color: white; 
+    padding: 12px 24px; 
+    border-radius: 4px; 
+    text-decoration: none; 
+}
+
+.btn-primary { 
+    background: #28a745; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    text-decoration: none; 
+    display: inline-block; 
+}
+
+.btn-danger { 
+    background: #dc3545; 
+    color: white; 
+    padding: 6px 12px; 
+    border-radius: 4px; 
+    text-decoration: none; 
+    font-size: 14px; 
+}
+
+.btn-edit { 
+    background: #ffc107; 
+    color: black; 
+    padding: 6px 12px; 
+    border-radius: 4px; 
+    text-decoration: none; 
+    font-size: 14px; 
+}
+
+input, select { 
+    padding: 8px; 
+    margin: 5px 0; 
+    width: 100%; 
+    max-width: 300px; 
+}
+
+table { 
+    border-collapse: collapse; 
+    width: 100%; 
+    margin-top: 20px; 
+}
+
+th { 
+    background: #007bff; 
+    color: white; 
+    padding: 8px; 
+}
+
+td { 
+    padding: 8px; 
+    text-align: center; 
+}
+
+.error { 
+    color: red; 
+    background: #ffebee; 
+    padding: 10px; 
+    margin: 10px 0; 
+    border-radius: 4px; 
+}
+
+.success { 
+    color: green; 
+    background: #e8f5e9; 
+    padding: 10px; 
+    margin: 10px 0; 
+    border-radius: 4px; 
+}
+
+.info { 
+    color: #666; 
+    font-size: 14px; 
+    margin-top: 15px; 
+}
