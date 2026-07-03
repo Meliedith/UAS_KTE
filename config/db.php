@@ -4,10 +4,12 @@
 // ===== FUNGSI: Koneksi ke database MySQL =========
 // ==================================================
 
-$host = 'localhost';
-$dbname = 'uas_kte_db';
-$username = 'root';
-$password = '';
+require_once __DIR__ . '/env.php';
+
+$host = $_ENV['DB_HOST'] ?? 'localhost';
+$dbname = $_ENV['DB_NAME'] ?? 'uas_kte_db';
+$username = $_ENV['DB_USERNAME'] ?? 'root';
+$password = $_ENV['DB_PASSWORD'] ?? '';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);

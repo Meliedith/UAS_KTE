@@ -10,11 +10,12 @@ if (isset($_SESSION['user_id'])) {
     exit;
 }
 require_once 'vendor/autoload.php';
+require_once 'config/env.php';
 
 $client = new Google_Client();
-$client->setClientId(''); // GANTI
-$client->setClientSecret(''); // GANTI
-$client->setRedirectUri('http://localhost/UAS_KTE/callback.php');
+$client->setClientId($_ENV['GOOGLE_CLIENT_ID'] ?? '');
+$client->setClientSecret($_ENV['GOOGLE_CLIENT_SECRET'] ?? '');
+$client->setRedirectUri($_ENV['GOOGLE_REDIRECT_URI'] ?? 'http://localhost/UAS_KTE/callback.php');
 $client->addScope("email");
 $client->addScope("profile");
 

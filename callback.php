@@ -4,9 +4,9 @@ require_once 'vendor/autoload.php';
 require_once 'config/db.php';
 
 $client = new Google_Client();
-$client->setClientId('');
-$client->setClientSecret('');
-$client->setRedirectUri('http://localhost/UAS_KTE/callback.php');
+$client->setClientId($_ENV['GOOGLE_CLIENT_ID'] ?? '');
+$client->setClientSecret($_ENV['GOOGLE_CLIENT_SECRET'] ?? '');
+$client->setRedirectUri($_ENV['GOOGLE_REDIRECT_URI'] ?? 'http://localhost/UAS_KTE/callback.php');
 
 if (isset($_GET['code'])) {
     $token = $client->fetchAccessTokenWithAuthCode($_GET['code']);

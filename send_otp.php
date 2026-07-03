@@ -18,7 +18,8 @@ if ($mode === 'register') {
     }
     $phone = $_SESSION['temp_phone'];
     $user_id = $_SESSION['temp_user_id'];
-    $secret = 'SECRET_REG_' . $user_id . '_' . date('Ymd');
+    $base_secret = $_ENV['OTP_SECRET_KEY'] ?? 'SECRET';
+    $secret = $base_secret . '_REG_' . $user_id . '_' . date('Ymd');
     $otp = totp($secret, 6);
     $_SESSION['temp_otp'] = $otp;
     $_SESSION['temp_otp_expiry'] = time() + 300;
@@ -33,7 +34,8 @@ if ($mode === 'register') {
     }
     $phone = $_SESSION['phone'];
     $user_id = $_SESSION['user_id'];
-    $secret = 'SECRET_' . $user_id . '_' . date('Ymd');
+    $base_secret = $_ENV['OTP_SECRET_KEY'] ?? 'SECRET';
+    $secret = $base_secret . '_' . $user_id . '_' . date('Ymd');
     $otp = totp($secret, 6);
     $_SESSION['otp'] = $otp;
     $_SESSION['otp_expiry'] = time() + 300;
