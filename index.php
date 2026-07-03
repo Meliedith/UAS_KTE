@@ -35,7 +35,7 @@ $login_url_user = $client->createAuthUrl();
     <link rel="stylesheet" href="assets/style.css">
     <script>
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('pwa/sw.js');
+            navigator.serviceWorker.register('sw.js');
         }
     </script>
 </head>
