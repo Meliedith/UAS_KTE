@@ -12,8 +12,8 @@ if (isset($_SESSION['user_id'])) {
 require_once 'vendor/autoload.php';
 
 $client = new Google_Client();
-$client->setClientId('933294865515-31lb7oinu142kmgobq5reur621e3nlgb.apps.googleusercontent.com'); // GANTI
-$client->setClientSecret('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'); // GANTI
+$client->setClientId(''); // GANTI
+$client->setClientSecret(''); // GANTI
 $client->setRedirectUri('http://localhost/UAS_KTE/callback.php');
 $client->addScope("email");
 $client->addScope("profile");

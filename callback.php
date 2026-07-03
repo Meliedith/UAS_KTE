@@ -4,8 +4,8 @@ require_once 'vendor/autoload.php';
 require_once 'config/db.php';
 
 $client = new Google_Client();
-$client->setClientId('933294865515-31lb7oinu142kmgobq5reur621e3nlgb.apps.googleusercontent.com');
-$client->setClientSecret('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');
+$client->setClientId('');
+$client->setClientSecret('');
 $client->setRedirectUri('http://localhost/UAS_KTE/callback.php');
 
 if (isset($_GET['code'])) {
