@@ -1,10 +1,10 @@
 const CACHE_NAME = 'uas-kte-cache-v5';
 const urlsToCache = [
-    '/UAS_KTE/index.php',
-    '/UAS_KTE/assets/style.css',
-    '/UAS_KTE/assets/icon-192.png',
-    '/UAS_KTE/assets/icon-512.png',
-    '/UAS_KTE/pwa/manifest.json'
+    '/adit/index.php',
+    '/adit/assets/style.css',
+    '/adit/assets/icon-192.png',
+    '/adit/assets/icon-512.png',
+    '/adit/pwa/manifest.json'
 ];
 
 // === INSTALL: Pre-cache assets penting ===
@@ -122,7 +122,7 @@ self.addEventListener('fetch', (event) => {
     <div class="icon">📡</div>
     <h2>Koneksi Terputus</h2>
     <p>Anda sedang offline dan halaman ini belum tersimpan di cache perangkat Anda. Periksa koneksi internet Anda.</p>
-    <a href="/UAS_KTE/index.php">🔄 Coba Lagi</a>
+    <a href="/adit/index.php">🔄 Coba Lagi</a>
   </div>
 </body>
 </html>`,

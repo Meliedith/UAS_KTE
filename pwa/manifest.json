@@ -2,8 +2,8 @@
   "name": "UAS KTE - Keamanan Transaksi",
   "short_name": "KTE Secure",
   "description": "Sistem Keamanan Transaksi berbasis OTP, Fingerprint, dan Google OAuth",
-  "start_url": "/UAS_KTE/index.php",
-  "scope": "/UAS_KTE/",
+  "start_url": "/adit/index.php",
+  "scope": "/adit/",
   "display": "standalone",
   "orientation": "portrait-primary",
   "background_color": "#0a1628",
@@ -12,25 +12,25 @@
   "categories": ["security", "finance"],
   "icons": [
     {
-      "src": "/UAS_KTE/assets/icon-192.png",
+      "src": "/adit/assets/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/UAS_KTE/assets/icon-192.png",
+      "src": "/adit/assets/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "/UAS_KTE/assets/icon-512.png",
+      "src": "/adit/assets/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/UAS_KTE/assets/icon-512.png",
+      "src": "/adit/assets/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
@@ -41,8 +41,8 @@
       "name": "Login",
       "short_name": "Login",
       "description": "Halaman Login Utama",
-      "url": "/UAS_KTE/index.php",
-      "icons": [{ "src": "/UAS_KTE/assets/icon-192.png", "sizes": "192x192" }]
+      "url": "/adit/index.php",
+      "icons": [{ "src": "/adit/assets/icon-192.png", "sizes": "192x192" }]
     }
   ]
 }
