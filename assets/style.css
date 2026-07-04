@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body { 
     font-family: Arial, sans-serif; 
     background: #f4f4f4; 
@@ -96,4 +100,10 @@ td {
     color: #666; 
     font-size: 14px; 
     margin-top: 15px; 
+}
+
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
 }

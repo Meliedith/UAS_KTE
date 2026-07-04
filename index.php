@@ -52,6 +52,7 @@ $login_url_user = $client->createAuthUrl();
             </a>
         </div>
         <p class="info">* Hanya email yang terdaftar sesuai peran yang dapat login</p>
+        <p class="info">⚠️ 1 email hanya dapat digunakan untuk 1 peran (Admin <strong>atau</strong> User, tidak bisa keduanya)</p>
         <?php if (isset($_GET['error'])): ?>
             <div class="error"><?= htmlspecialchars($_GET['error']) ?></div>
         <?php endif; ?>
