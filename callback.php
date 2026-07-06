@@ -6,7 +6,7 @@ require_once 'config/db.php';
 $client = new Google_Client();
 $client->setClientId($_ENV['GOOGLE_CLIENT_ID'] ?? '');
 $client->setClientSecret($_ENV['GOOGLE_CLIENT_SECRET'] ?? '');
-$client->setRedirectUri($_ENV['GOOGLE_REDIRECT_URI'] ?? 'http://localhost/adit/callback.php');
+$client->setRedirectUri($_ENV['GOOGLE_REDIRECT_URI'] ?? 'http://localhost/UAS_KTE/callback.php');
 
 if (isset($_GET['code'])) {
     $token = $client->fetchAccessTokenWithAuthCode($_GET['code']);

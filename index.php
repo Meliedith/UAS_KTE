@@ -15,7 +15,7 @@ require_once 'config/env.php';
 $client = new Google_Client();
 $client->setClientId($_ENV['GOOGLE_CLIENT_ID'] ?? '');
 $client->setClientSecret($_ENV['GOOGLE_CLIENT_SECRET'] ?? '');
-$client->setRedirectUri($_ENV['GOOGLE_REDIRECT_URI'] ?? 'http://localhost/adit/callback.php');
+$client->setRedirectUri($_ENV['GOOGLE_REDIRECT_URI'] ?? 'http://localhost/UAS_KTE/callback.php');
 $client->addScope("email");
 $client->addScope("profile");
 
@@ -37,14 +37,14 @@ $login_url_user = $client->createAuthUrl();
     <!-- Theme Color -->
     <meta name="theme-color" content="#4285f4">
     <meta name="msapplication-TileColor" content="#0a1628">
-    <meta name="msapplication-TileImage" content="/adit/assets/icon-192.png">
+    <meta name="msapplication-TileImage" content="/UAS_KTE/assets/icon-192.png">
     <!-- iOS PWA Support -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="KTE Secure">
-    <link rel="apple-touch-icon" href="/adit/assets/icon-192.png">
+    <link rel="apple-touch-icon" href="/UAS_KTE/assets/icon-192.png">
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="192x192" href="/adit/assets/icon-192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/UAS_KTE/assets/icon-192.png">
     <link rel="stylesheet" href="assets/style.css">
     <style>
         /* === PWA Install Banner === */
@@ -117,7 +117,7 @@ $login_url_user = $client->createAuthUrl();
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/adit/sw.js')
+                navigator.serviceWorker.register('/UAS_KTE/sw.js')
                     .then(reg => console.log('SW registered:', reg.scope))
                     .catch(err => console.warn('SW error:', err));
             });

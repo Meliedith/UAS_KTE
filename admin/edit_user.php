@@ -45,11 +45,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit User</title>
-    <link rel="manifest" href="/adit/pwa/manifest.json">
+    <link rel="manifest" href="/UAS_KTE/pwa/manifest.json">
     <link rel="stylesheet" href="../assets/style.css">
     <script>
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/adit/sw.js');
+            navigator.serviceWorker.register('/UAS_KTE/sw.js');
         }
     </script>
 </head>
